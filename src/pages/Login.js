@@ -17,7 +17,7 @@ export default class Login extends Component {
     username: '',
   }
 
-  async componentidMount() {
+  async componentDidMount() {
     const username = await AsyncStorage.getItem('@OmniStack:username');
 
     if (username) {
